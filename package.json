@@ -1,7 +1,7 @@
 {
   "name": "@yasoonofficial/handlebars-kit",
   "description": "More than 130 Handlebars helpers in ~20 categories.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/Oneflow/handlebars-kit",
   "author": "OneFlow Systems Ltd",
   "contributors": [
@@ -84,8 +84,7 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "handlebars": "4.x",
-    "moment": "2.x"
+    "handlebars": "4.x"
   },
   "devDependencies": {
     "docdash": "^1.1.0",
@@ -93,15 +92,12 @@
     "handlebars": "4.7.7",
     "jest": "27.2.3",
     "jsdoc": "3.6.7",
-    "mockdate": "2.0.2",
-    "moment": "2.29.4",
     "semantic-release": "18.0.0"
   },
   "keywords": [
     "array",
     "collection",
     "comparison",
-    "date",
     "handlebars",
     "helper",
     "helpers",

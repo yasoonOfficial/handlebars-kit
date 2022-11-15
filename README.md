@@ -87,7 +87,6 @@ const math = helpers.math({
 * **[array](#array)** ([code](lib/array.js) | [unit tests](test/array.js))
 * **[collection](#collection)** ([code](lib/collection.js) | [unit tests](test/collection.js))
 * **[comparison](#comparison)** ([code](lib/comparison.js) | [unit tests](test/comparison.js))
-* **[date](#date)** ([code](lib/date.js) | [unit tests](test/date.js))
 * **[html](#html)** ([code](lib/html.js) | [unit tests](test/html.js))
 * **[i18n](#i18n)** ([code](lib/i18n.js) | [unit tests](test/i18n.js))
 * **[inflection](#inflection)** ([code](lib/inflection.js) | [unit tests](test/inflection.js))
@@ -170,19 +169,6 @@ Visit the: [code](lib/comparison.js) | [unit tests](test/comparison.js)
 * **[unlessLt](#unlessLt)** ([code](lib/comparison.js#L555) | [tests](test/comparison.js#L578))
 * **[unlessGteq](#unlessGteq)** ([code](lib/comparison.js#L575) | [tests](test/comparison.js#L586))
 * **[unlessLteq](#unlessLteq)** ([code](lib/comparison.js#L595) | [tests](test/comparison.js#L601))
-
-### [date helpers](#date)
-
-Visit the: [code](lib/date.js) | [unit tests](test/date.js)
-
-* **[year](#year)** ([code](lib/date.js#L24) | [tests](test/date.js#L11))
-* **[date](#date)** ([code](lib/date.js#L88) | [tests](test/date.js#L33))
-* **[moment](#moment)** ([code](lib/date.js#L55) | [no tests])
-* **[formatDate](#formatDate)** ([code](lib/date.js#L103) | [tests](test/date.js#L65))
-* **[niceDate](#niceDate)** ([code](lib/date.js#L119) | [tests](test/date.js#L80))
-* **[getTime](#getTime)** ([code](lib/date.js#L133) | [tests](test/date.js#L91))
-
-
 
 ### [html helpers](#html)
 
@@ -1321,23 +1307,6 @@ is less than or equal to `b`**.
 * `b` **{any}**
 * `options` **{Object}**: Handlebars provided options object
 * `returns` **{String}**: Block, or inverse block if specified and falsey.
-
-## date
-
-### [{{year}}](lib/date.js#L15)
-
-Get the current year.
-
-**Example**
-
-```handlebars
-{{year}}
-<!-- 2017 -->
-```
-
-### [{{moment}}](lib/date.js#L24)
-
-Use [moment](http://momentjs.com) as a helper. See [helper-date](https://github.com/helpers/helper-date) for more details.
 
 ## html
 
