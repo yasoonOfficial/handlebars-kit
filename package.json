@@ -1,7 +1,7 @@
 {
-  "name": "handlebars-kit",
+  "name": "@yasoonofficial/handlebars-kit",
   "description": "More than 130 Handlebars helpers in ~20 categories.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/Oneflow/handlebars-kit",
   "author": "OneFlow Systems Ltd",
   "contributors": [
@@ -54,7 +54,14 @@
     "Tim Douglas (https://github.com/timdouglas)",
     "(https://github.com/homersimpsons)"
   ],
-  "repository": "Oneflow/handlebars-kit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yasoonOfficial/handlebars-kit",
+    "directory": "packages/handlebars-kit"
+  },
   "bugs": {
     "url": "https://github.com/Oneflow/handlebars-kit/issues"
   },
