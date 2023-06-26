@@ -19,7 +19,7 @@ module.exports = (groups, options) => {
   if (!hbs) throw new Error('You need to pass "handlebars" as an option');
 
   if (groups) {
-    groups.forEach(function(key) {
+    groups.forEach(function (key) {
       hbs.registerHelper(lib[key]);
     });
   } else {
@@ -27,6 +27,10 @@ module.exports = (groups, options) => {
   }
 
   return hbs.helpers;
+};
+
+module.exports.getHelpers = () => {
+  return lib;
 };
 
 Object.keys(lib).forEach(key => {
