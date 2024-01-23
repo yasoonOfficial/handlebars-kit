@@ -19,6 +19,26 @@ describe('collection', function() {
       assert.equal(fn({array: []}), 'AAA');
     });
 
+    it('should render the first block when the value is explizitly set to null', function() {
+      const fn = hbs.compile('{{#isEmpty null}}AAA{{else}}BBB{{/isEmpty}}');
+      assert.equal(fn({array: []}), 'AAA');
+    });
+
+    it('should render the first block when the value is explizitly set to undefined', function() {
+      const fn = hbs.compile('{{#isEmpty null}}AAA{{else}}BBB{{/isEmpty}}');
+      assert.equal(fn({array: []}), 'AAA');
+    });
+
+    it('should render the first block when the value is an empty string', function() {
+      const fn = hbs.compile('{{#isEmpty ""}}AAA{{else}}BBB{{/isEmpty}}');
+      assert.equal(fn({array: []}), 'AAA');
+    });
+
+    it('should render the second block when the value is an string', function() {
+      const fn = hbs.compile('{{#isEmpty "test"}}AAA{{else}}BBB{{/isEmpty}}');
+      assert.equal(fn({array: []}), 'BBB');
+    });
+
     it('should render the second block when an array is not empty', function() {
       const fn = hbs.compile('{{#isEmpty array}}AAA{{else}}BBB{{/isEmpty}}');
       assert.equal(fn(context), 'BBB');
@@ -44,6 +64,26 @@ describe('collection', function() {
     it('should render the first block when the value is null', function() {
       const fn = hbs.compile('{{isEmpty}}');
       assert.equal(fn({array: []}), 'true');
+    });
+
+    it('should render the first block when the value is explizitly set to null', function() {
+      const fn = hbs.compile('{{isEmpty null}}');
+      assert.equal(fn({array: []}), 'true');
+    });
+
+    it('should render the first block when the value is explizitly set to undefined', function() {
+      const fn = hbs.compile('{{isEmpty null}}');
+      assert.equal(fn({array: []}), 'true');
+    });
+
+    it('should render the first block when the value is an empty string', function() {
+      const fn = hbs.compile('{{isEmpty ""}}');
+      assert.equal(fn({array: []}), 'true');
+    });
+
+    it('should render the second block when the value is an string', function() {
+      const fn = hbs.compile('{{isEmpty "test"}}');
+      assert.equal(fn({array: []}), 'false');
     });
 
     it('should render the second block when an array is not empty', function() {

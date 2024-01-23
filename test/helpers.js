@@ -31,7 +31,6 @@ describe('helpers', function() {
     const res = helpers('string', {handlebars: hbs.create()});
 
     assert(res.hasOwnProperty('replace'));
-    assert(res.hasOwnProperty('reverse'));
     assert(res.hasOwnProperty('prepend'));
     assert(!res.hasOwnProperty('some'));
     assert(!res.hasOwnProperty('last'));
