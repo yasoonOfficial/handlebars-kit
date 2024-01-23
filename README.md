@@ -2443,22 +2443,6 @@ Replace the first occurrence of substring `a` with substring `b`.
 <!-- results in:  'z b a b a b' -->
 ```
 
-### [{{reverse}}](lib/string.js#L492)
-
-Reverse a string.
-
-**Params**
-
-* `str` **{String}**
-* `returns` **{String}**
-
-**Example**
-
-```handlebars
-{{reverse "abcde"}}
-<!-- results in:  'edcba' -->
-```
-
 ### [{{sentence}}](lib/string.js#L509)
 
 Sentence case the given string
